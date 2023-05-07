@@ -1,4 +1,4 @@
-First project of Travel App. 
+My first project - TravelBuddy. 
 
 I've used 
 - React, 
