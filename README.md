@@ -2,7 +2,7 @@ First project of Travel App.
 
 I've used 
 - React, 
-- MUI  
+- MUI (Material-UI)
 - Supabase. 
 
 
