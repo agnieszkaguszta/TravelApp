@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.1b9c13dc.css","mappings":"AAAA,EAGE,sBAGF,iBALE,SACA,SAOA,CAHF,eAGE","sources":["components/App/App.scss"],"sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n#app-container{\n  margin: 0;\n  padding: 0;\n  width: 100%;\n}\n\n\n\n"],"names":[],"sourceRoot":""}
