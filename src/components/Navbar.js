@@ -15,8 +15,7 @@ import theme from "../theme";
 import { BASE_URL } from "../helper/api";
 
 
-const pages = ['About Us', 'Contact', 'Your Destinationes'];
-const pages2 = [{title: 'About Us', to: 'about-us'}, 'Contact', 'Your Destinationes'];
+const pages = ['About Us', 'Contact', 'Your Destinations'];
 const settings = ['Profile', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -108,8 +107,11 @@ function ResponsiveAppBar() {
                                                 ? "/#/about-us"
                                                 : page === "Contact"
                                                     ? "/#/contact-form"
-                                                    : null
+                                                    : page === "Your Destinations"
+                                                        ? "/#/your-destinations"
+                                                        : null
                                         }
+
                                     >
                                         {page}
                                     </Typography>
@@ -147,6 +149,8 @@ function ResponsiveAppBar() {
                                     ? '/#/about-us'
                                     : page==='Contact'
                                         ? '/#/contact-form'
+                                        : page === "Your Destinations"
+                                            ? "/#/your-destinations"
                                         : null
                                 }
                             >

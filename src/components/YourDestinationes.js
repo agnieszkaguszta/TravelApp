@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Stack from '@mui/material/Stack';
 import ExploreIcon from '@mui/icons-material/Explore';
@@ -14,6 +13,7 @@ import { createClient } from '@supabase/supabase-js'
 const supabaseUrl = 'https://owomarsllfpnkcuwxlvl.supabase.co'
 const supabaseKey = process.env.SUPABASE_KEY
 const supabase = createClient(supabaseUrl, 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im93b21hcnNsbGZwbmtjdXd4bHZsIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODMzMDQ5NTcsImV4cCI6MTk5ODg4MDk1N30.TklK9CbeZXZLq2j4O-cRFWvnd343Scuvh0qcD1SPGRQ')
+
 const YourDestinations = () => {
     const [note, setNote] = useState('');
 
@@ -23,9 +23,9 @@ const YourDestinations = () => {
 
     const add = async () => {
         const { data, error } = await supabase
-            .from('destinationes')
+            .from('destinations')
             .insert([
-                { destinantiones: 'someValue' },
+                { destinations: 'someValue' },
             ])
 
     }
