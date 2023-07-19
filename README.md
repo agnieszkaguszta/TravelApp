@@ -5,6 +5,15 @@ I've used
 - MUI (Material-UI)
 - Supabase. 
 
+To run this project, install it locally using npm:
+
+```
+1. Download repository to your desktop.
+2. Open the repository in your code editor.
+3. In terminal write npm install
+4. Next write npm start .
+```
+
 
 #Home_page
 
